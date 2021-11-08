@@ -1,0 +1,4 @@
+<div *ngIf="favoritesMovies" class="content d-flex row">
+  <app-home-list-item [favoritesMovies]="favoritesMovies" class="d-flex flex-wrap" (removedFromFavorites)="removedFromFavoritesChild($event)"></app-home-list-item>
+</div>
+

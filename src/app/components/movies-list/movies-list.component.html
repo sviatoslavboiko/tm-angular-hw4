@@ -1,0 +1,5 @@
+<div *ngIf="movies"class="content d-flex row">
+  <app-movies-list-item [allMovies]="movies" class="d-flex flex-wrap" (addedToFavorites)="addToFavoritesChild($event)"></app-movies-list-item>
+  <button class="btn"></button>
+</div>
+

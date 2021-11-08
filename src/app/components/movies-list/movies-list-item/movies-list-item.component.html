@@ -1,0 +1,10 @@
+<div *ngFor="let movie of allMovies" class="col-3">
+  <div class="card m-2" style="width: 18rem; height: 14rem;">
+    <div class="card-body">
+      <h5 class="card-title" style="height: 4rem;">Movie Title: {{ movie.title }}</h5>
+      <p class="card-text">Movie Votes: {{ movie.vote_average | number:'1.1'}}</p>
+      <p class="card-text">Movie Release Date: {{ movie.release_date | date}}</p>
+      <a (click)="addToFavorites(movie)" class="btn btn-dark">Add to favorites</a>
+    </div>
+  </div>
+</div>
